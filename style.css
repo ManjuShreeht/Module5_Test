@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Lora:wght@400;500;600&family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@300&family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    min-height: 600px;
+    background: url('car-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 5px;
+}
+
+.header .nav-links {
+    flex: 1;
+}
+
+.logo {
+    color: white;
+    margin-left: 150px;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.fa {
+    padding: 7px;
+}
+
+.nav-links ul {
+    display: flex;
+    margin-left: 270px;
+}
+
+ul li {
+    padding: 15px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+ul li a:hover {
+    border: 1px solid rgb(25, 156, 231);
+    color: white;
+    background-color: rgb(25, 156, 231);
+    padding: 7px 5px;
+    border-radius: 4px;
+}
+
+.active {
+    border: 1px solid rgb(25, 156, 231);
+    color: white;
+    background-color: rgb(25, 156, 231);
+    padding: 7px 5px;
+    border-radius: 2px;
+}
+
+.header .text {
+    transform: translate(-30% -20%);
+    margin-top: 13%;
+    margin-left: 250px;
+    padding-top: 10px;
+}
+
+.text h1 {
+    font-size: 3em;
+    font-weight: bld;
+    color: rgb(25, 156, 231);
+}
+
+.text p {
+    color: white;
+    padding: 20px 0;
+    font-size: 1.5em;
+}
+
+.text a {
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 1px solid rgb(25, 156, 231);
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(25, 156, 231);
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.header .text a:hover {
+    border: 1px solid rgb(25, 156, 231);
+    color: white;
+    background-color: rgb(25, 156, 231);
+    transition: 0.5s;
+}
+
+.footer {
+    margin-top: 120px;
+    margin-bottom: 0px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    height: 102px;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 4px;
+    margin-top: 25px;
+}
+
+.footer .col {
+    padding: 0 100px;
+}
+
+.col h5 {
+    color: rgb(25, 156, 231);
+}
+
+@media(max-width:800px) {
+    .header {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .logo {
+        color: white;
+        margin-left: 10px;
+        font-size: 12px;
+        cursor: pointer;
+        font-family: sans-serif;
+        display: inline;
+    }
+    .fa {
+        padding: 1px;
+    }
+    .header .text {
+        margin-top: 250px;
+        text-align: center;
+        margin-left: 3px;
+    }
+    .text h1 {
+        font-size: 30px;
+    }
+    .header {
+        overflow: hidden;
+    }
+}
