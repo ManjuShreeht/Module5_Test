@@ -13,9 +13,12 @@
 
 <body>
     <section class="header">
-        <div class="navbar">
+        <nav class="navbar" id="navlinks">
             <h1 class="logo"> <i class="fa fa-car" aria-hidden="true"></i>Automotive </h1>
             <div class="nav-links">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+
+
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Features</a></li>
@@ -25,11 +28,12 @@
 
                 </ul>
             </div>
-        </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
         <div class="text">
             <h1>Your Card Repairs</h1>
             <p>visit us for your service</p>
-            <a href="">Book Appointment</a>
+            <button class="hero-btn">Book Appointment</button>
         </div>
         <div class="footer">
             <div class="row">
@@ -48,6 +52,18 @@
             </div>
         </div>
     </section>
+    <script>
+        var navLinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navLinks.style.right = "0"; // right value 0-->
+        }
+
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
 
 </body>
 

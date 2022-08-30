@@ -58,17 +58,17 @@ ul li a {
 }
 
 ul li a:hover {
-    border: 1px solid #00bfff;
+    border: 1px solid#0deeee;
     color: white;
-    background-color: #00bfff;
+    background-color: #0deeee;
     padding: 7px 5px;
     border-radius: 4px;
 }
 
 .active {
-    border: 1px solid #00bfff;
+    border: 1px solid #0deeee;
     color: white;
-    background-color: #00bfff;
+    background-color: #0deeee;
     padding: 7px 5px;
     border-radius: 2px;
 }
@@ -83,7 +83,7 @@ ul li a:hover {
 .text h1 {
     font-size: 3em;
     font-weight: bld;
-    color: rgb(25, 156, 231);
+    color: #0deeee;
 }
 
 .text p {
@@ -95,18 +95,18 @@ ul li a:hover {
 .text a {
     text-decoration: none;
     text-transform: capitalize;
-    border: 1px solid rgb(25, 156, 231);
+    border: 1px solid #0deeee;
     color: white;
     border-radius: 3px;
-    background-color: rgb(25, 156, 231);
+    background-color: #0deeee;
     padding: 10px;
     font-size: 1.5em;
 }
 
 .header .text a:hover {
-    border: 1px solid rgb(25, 156, 231);
+    border: 1px solid#0deeee;
     color: white;
-    background-color: rgb(25, 156, 231);
+    background-color: #0deeee;
     transition: 0.5s;
 }
 
@@ -135,15 +135,41 @@ ul li a:hover {
 }
 
 .col h5 {
-    color: rgb(25, 156, 231);
+    color: #0deeee;
 }
 
-@media(max-width:800px) {
+nav .fa {
+    display: none;
+}
+
+.text .hero-btn {
+    border: 1px solid #0deeee;
+    color: white;
+    background-color: #0deeee;
+    transition: 0.5s;
+    padding: 5px 5px;
+    border-radius: 3px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.text .hero-btn:hover {
+    border: 1px solid #0deeee;
+    color: white;
+    background-color: #0deeee;
+    box-shadow: 1px 1px 2px white;
+    transition: 0.5s;
+}
+
+@media(max-width:700px) {
     .header {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        position: relative;
+    }
+    .nav-links ul li a {
+        font-size: 24px;
     }
     .logo {
         color: white;
@@ -166,5 +192,32 @@ ul li a:hover {
     }
     .header {
         overflow: hidden;
+    }
+    .footer {
+        display: block;
+        height: 20vh;
+        margin-top: 100px;
+        position: relative;
+        padding-top: 30px;
+    }
+    footer .row {
+        text-align: center;
+        font-size: 10px;
+        display: inline-block;
+    }
+    .footer .col {
+        display: block;
+        width: 100%;
+        font-size: 10px;
+        position: relative;
+        padding: 0px;
+    }
+    .header.navbar .nav-links {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+        left: 0;
+        position: relative;
     }
 }
