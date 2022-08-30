@@ -138,8 +138,6 @@ ul li a:hover {
     color: rgb(25, 156, 231);
 }
 
-
-/*
 @media(max-width:800px) {
     .header {
         background-position: center;
@@ -169,4 +167,4 @@ ul li a:hover {
     .header {
         overflow: hidden;
     }
-} */
+}
