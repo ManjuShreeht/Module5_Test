@@ -58,17 +58,17 @@ ul li a {
 }
 
 ul li a:hover {
-    border: 1px solid rgb(25, 156, 231);
+    border: 1px solid #00bfff;
     color: white;
-    background-color: rgb(25, 156, 231);
+    background-color: #00bfff;
     padding: 7px 5px;
     border-radius: 4px;
 }
 
 .active {
-    border: 1px solid rgb(25, 156, 231);
+    border: 1px solid #00bfff;
     color: white;
-    background-color: rgb(25, 156, 231);
+    background-color: #00bfff;
     padding: 7px 5px;
     border-radius: 2px;
 }
